@@ -33,17 +33,20 @@ def map_to_square(source_array)
 end 
 
 def reduce_to_total(source_array, starting_point = nil)
-  if starting_point
-  sum = starting_point
-    i = 0 
   total = 0 
-  sum
-  i = 0 
+  if starting_point
+    sum = starting_point
+    i = 0 
+  else 
+    sum = array[0]
+    i = 1
+  end 
+  
   while i < source_array.length do 
     if source_array 
       total += i + i
-    else source_array[starting_point]
-      total = total + starting_point
+    else source_array[sum]
+      total = total + sum
     end 
     i += 1 
   end
