@@ -40,12 +40,12 @@ def reduce_to_total(source_array, starting_point = 100)
     if source_array 
       total += i + i
     else 
-    total = total + starting_point
+      total = total + starting_point
     end 
     i += 1 
+    total_2  = total + starting_point
   end 
-  total
-  total_2  = total + starting_point
+
   total || total_2
 end 
 
