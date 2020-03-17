@@ -34,7 +34,7 @@ end
 
 def reduce_to_total(source_array, starting_point = 100)
   total = 0 
-  total_2 = 0
+
   i = 0 
   while i < source_array.length do 
     if source_array 
@@ -43,10 +43,8 @@ def reduce_to_total(source_array, starting_point = 100)
       total = total + starting_point
     end 
     i += 1 
-    total_2  = total + starting_point
-  end 
-
-  total || && total_2
+  end
+   total
 end 
 
 
