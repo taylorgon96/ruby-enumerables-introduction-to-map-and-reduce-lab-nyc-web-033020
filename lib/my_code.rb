@@ -46,7 +46,7 @@ def reduce_to_total(source_array, starting_point = nil)
     if source_array[sum]
       total += i + i
     else source_array[sum]
-      total + sum
+     total = i + sum
     end 
     i += 1 
   end
